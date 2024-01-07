@@ -1,0 +1,170 @@
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 232, 235);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.section1{
+    background-color:transparent;
+    box-shadow: 0 0 29px 8px #8181453a;
+    padding: 5% 6%;
+    font-size: 1.5rem;
+    /* width: 700px; */
+    color: #84ad76;
+    background-image: url(../imgs/bg1.webp);
+    background-position: 100% 100%;
+    background-position: center center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    border-radius: 25px;
+    margin-top: 2%;
+}
+.section1 .wavyText{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 30px;
+}
+.section1 .wavyText h1{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    font-size: 90px;
+    font-size: 5rem;
+}
+
+.section1 .wavyText h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:1px #84ad76;    
+}
+.section1 .wavyText h1:last-child{
+    color: #d7dea1;
+    color: #84ad76;
+    animation: wavy 3s ease-in-out infinite;
+}
+@keyframes wavy {
+    0%,100%{
+        clip-path: polygon(0 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+.flexMark p{
+    padding: 30px;
+    margin-top: 10px;
+}
+#form input{
+    box-shadow: 0 0 6px 5px #f7f9eb inset;
+    margin-block: 10px;
+    padding: 12px !important;
+}
+.form-control:focus{
+    border-color: #d7dea1;
+    box-shadow: none;
+}
+#form button{
+    font-size: 1.9rem;
+    padding: 11px 73px;
+    margin-block: 20px;
+    border: none;
+    background-color: #84ad76;
+    transition: .3s;
+    color: #fdf8e1;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#form button:hover{
+    background-color: #789e6c;  
+}
+.table>:not(caption)>*>*{
+    background-color: #fdf8e1d3;
+    color: #84ad76;
+}
+.table-hover>tbody>tr:hover>*{
+    /* background-color:#adee9760; */
+    background-color: #f4e8b654;
+}
+.thead{
+    background-color: #f8e390ce;
+}
+tbody .icon{
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #84ad76;
+    box-shadow: 0px 4px 17px -8px #84ad76; 
+    transition: .3s;
+}
+.table td a{
+    color: #618d52;
+}
+tbody #visit{
+ color: #84ad76;
+}
+tbody #update{
+    color: rgb(220, 211, 44);
+}
+tbody #delete{
+ color: red;
+}
+tbody #visit:hover{
+    color: #95c685cd;
+}
+
+tbody #update:hover{
+    color:  rgb(238, 231, 97);
+}
+tbody #delete:hover{
+    color: rgb(250, 104, 104);
+}
+.tblScroll{
+    overflow-y: scroll;
+    max-height: 60vh;
+    overflow: auto;
+}
+    ::-webkit-scrollbar{
+    width: 16px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #84ad76;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1400px){
+    .tblScroll{
+        overflow-x: scroll;
+        overflow-y: scroll;
+        max-height: 100%;
+        max-width: 100%;
+        
+    }
+}
+@media screen and (max-width:576px) {
+    .section1 .wavyText h1{
+        font-size: 60px;
+    }
+    .tr td,
+    .tr td .icon{
+        font-size: 16px;
+    }
+    .tblScroll{
+        overflow-x: scroll;
+        overflow-y: scroll;
+        max-height: 70vh;
+        max-width: 60vh;
+    }
+}
+
+
+
+

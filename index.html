@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/bookmark-icon-glyphs-shadow-98689843.webp" type="image/x-icon">
+    <title>bookmarker</title>
+
+    <!-- bootsrtap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- fonts h1 -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,600;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="section1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class=" wavyText">
+                            <h1>bookmarker</h1>
+                            <h1>bookmarker</h1>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="bookmark">
+                            <div class="flexMark d-flex align-items-center justify-content-center align-items-center">
+                                <i class="icon fa-solid fa-bookmark"></i>
+                                <p>Bookmark your favorite sites</p>
+                                <i class="icon fa-solid fa-bookmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="form">
+                            <label for="siteName">
+                                <i class="icon fa-solid fa-book-bookmark"></i>
+                                site name
+                            </label>
+                            <input id="siteName" class="form-control" type="text">
+                            <label for="siteURL">
+                                <i class="icon fa-solid fa-link"></i>
+                                site url
+                            </label>
+                            <input id="siteURL" class="form-control" type="url" name="" id="">
+                            <button onclick="addItems()" id="addBtn" class="form-control" type="submit">add</button>
+                            <button id="updateBtn" onclick="updateInput()" class="form-control d-none" type="submit">update</button>
+                            <input id="search" oninput="search()" class="form-control me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                        </div>
+                    </div>
+                    <div class="col-12 tblScroll">
+                        <table class="table table-responsive table-bordered table-hover text-center">                   
+                            <thead class="thead">
+                                <tr class="tr">
+                                    <td>index</td>
+                                    <td>wesite name</td>
+                                    <td>visit</td>
+                                    <td>update</td>
+                                    <td>delete</td>
+                                    
+                                </tr>                       
+                            </thead>
+                            <tbody id="tBodyInsert"></tbody>                   
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- bootstrap -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- font awesome -->
+      <script src="js/all.min.js"></script>
+      <!-- js -->
+      <script src="js/script.js"></script>
+</body>
+</html>
